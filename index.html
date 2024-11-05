@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>classy todo</title>
+  </head>
+  <body>
+    <main id="container">
+      <div class="todoBox">
+        <!-- todo header -->
+        <div class="todo-header">
+          <h1 class="logo-text">ClassyTodo</h1>
+          <img
+            class="logo"
+            src="assets/icons/to-do-list.png"
+            alt="todo header logo"
+            width="30"
+            height="30"
+            loading="lazy"
+          />
+        </div>
+        <!-- todo form -->
+        <div class="todo-form">
+          <div class="input-container">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Add a new todo..."
+            />
+          </div>
+
+          <button id="add-todo-button">
+            <img
+              src="assets/icons/plus.png"
+              alt="add todo button"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+          </button>
+        </div>
+        <!-- todo body -->
+        <div class="todo-body">
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
