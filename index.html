@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <title>classy todo</title>
   </head>
@@ -42,8 +43,9 @@
           </button>
         </div>
         <!-- todo body -->
-        <div class="todo-body">
-          <ul id="todo-list"></ul>
+        <div class="todo-body w-full">
+          <p id="alert-message" class="transition-all ease-in-out"></p>
+          <ul class="w-full flex flex-col gap-2" id="todo-list"></ul>
         </div>
       </div>
     </main>
